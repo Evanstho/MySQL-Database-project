@@ -73,61 +73,61 @@ Note: All code is based on the CS340 starter code, with the exception of:
 -- Used this to change the name on the submit button to more accurately reflect it's purpose. For example, changed "submit" to "add class" and "update class"
 -- https:www.w3docs.com/snippets/html/how-to-allow-only-positive-numbers-in-the-input-number-type.html --
 ```
-```
+
 **OSU starter code (nodejs): **
 ```
- -- Citation for the following function:--
- -- Date: 5/10/2023 --
- -- Adapted from: nodejs-starter app on github step 0: setting up Node--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%200%20-%20Setting%20Up%20Node.js
+-- Citation for the following function:--
+-- Date: 5/10/2023 --
+-- Adapted from: nodejs-starter app on github step 0: setting up Node--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%200%20-%20Setting%20Up%20Node.js
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/10/2023 --
- -- Adapted from: nodejs-starter app on github step 1: Connecting to a MySQL Database--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%201%20-%20Connecting%20to%20a%20MySQL%20Database
+-- Citation for the following function:--
+-- Date: 5/10/2023 --
+-- Adapted from: nodejs-starter app on github step 1: Connecting to a MySQL Database--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%201%20-%20Connecting%20to%20a%20MySQL%20Database
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs-starter app on github step 2: Loading Data into database--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%202%20-%20Loading%20Data%20into%20the%20Database
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs-starter app on github step 2: Loading Data into database--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%202%20-%20Loading%20Data%20into%20the%20Database
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs-starter app on github step 3: Integrating a Templating Engine (handelbars)--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%203%20-%20Integrating%20a%20Templating%20Engine%20(Handlebars)
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs-starter app on github step 3: Integrating a Templating Engine (handelbars)--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%203%20-%20Integrating%20a%20Templating%20Engine%20(Handlebars)
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs-starter app on github step 4: Dynamically Displaying Data--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs-starter app on github step 4: Dynamically Displaying Data--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs starter app on github step 5: Adding New Data--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs starter app on github step 5: Adding New Data--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs starter app on github step 6: Dynamically Filling Dropdowns and Adding a Search Box--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%206%20-%20Dynamically%20Filling%20Dropdowns%20and%20Adding%20a%20Search%20Box
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs starter app on github step 6: Dynamically Filling Dropdowns and Adding a Search Box--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%206%20-%20Dynamically%20Filling%20Dropdowns%20and%20Adding%20a%20Search%20Box
 ```
 ```
- -- Citation for the following function:--
- -- Date: 5/23/2023 --
- -- Adapted from: nodejs starter app on github step 7: Dynamically Deleting data--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%207%20-%20Dynamically%20Deleting%20Data
+-- Citation for the following function:--
+-- Date: 5/23/2023 --
+-- Adapted from: nodejs starter app on github step 7: Dynamically Deleting data--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%207%20-%20Dynamically%20Deleting%20Data
 ```
 ```
- -- Citation for the following function:--
- -- Date: 6/9/2023 --
- -- Adapted from: nodejs starter app on github step 8: Dynamically Updating Data--
- -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%208%20-%20Dynamically%20Updating%20Data
+-- Citation for the following function:--
+-- Date: 6/9/2023 --
+-- Adapted from: nodejs starter app on github step 8: Dynamically Updating Data--
+-- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%208%20-%20Dynamically%20Updating%20Data
 ```
  ## Copyright © 2023
  The Online Fake University(TOFU) Database project was developed by Thomas Evans and Vanessa Dowd in Spring 2023. All Rights Reserved.
