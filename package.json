@@ -1,0 +1,20 @@
+{
+  "name": "The Online Fake University",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/forever/bin/forever start app.js",
+    "stop": "./node_modules/forever/bin/forever stop app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VDowd, TEvans",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "forever": "^4.0.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,129 @@
+{{!-- Citation for the following functions:--}}
+{{!--Date:6/1/2023 --}}
+{{!-- Adapted from: https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+{{!-- nodejs-starter-app/Step 7 - Dynamically Deleting Data/ --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: OSUC-CS 340 ecampus node js starter app instructions: step 5 / adding new data--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: nodejs-starter-app Step 8: Dynamically Updating Data--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: nodejs-starter-app Step 6: Dynamically FIlling Dropdowns and Adding a Search Bar--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data --}}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<main>
+    <section>
+        <h2>Students</h2>
+            <article>
+                <table id="students-table">
+                    <thead>
+                        <tr>
+                            {{#each data.[0]}}
+                            <th>
+                                {{@key}}
+                            </th>
+                            {{/each}}
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data}}
+                        <tr>
+                            <td>{{this.studentID}}</td>
+                            <td>{{this.FirstName}}</td>
+                            <td>{{this.LastName}}</td>
+                            <td>{{this.Username}}</td>
+                            <td>{{this.Email}}</td>
+                            <td>{{this.Major}}</td>
+                            <td><button onclick="deleteStudent({{this.studentID}})">Delete Student</button></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <script src="./js/delete_student.js"></script>
+            </article>
+            <article>
+                {{!-- Form to add a record to the table  --}}
+                <h2>Add Student</h2>
+                <p>To add a new student, please enter their information below and click 'Submit'!</p>
+                <form id="add-student-form-ajax">
+                    <label for="input-firstName">First Name: </label>
+                    <input type="text" name="input-firstName" id="input-firstName" placeholder="First Name" required>
+                    
+                    <label for="input-lastName">Last Name: </label>
+                    <input type="text" name="input-lastName" id="input-lastName" placeholder="Last Name" required>
+
+                    <label for="input-userName">Username: </label>
+                    <input type="text" name="input-userName" id="input-userName" placeholder="Username" required>
+
+                    <label for="input-email">Email: </label>
+                    <input type="text" name="input-email" id="input-email" placeholder="first.last@TOFU.edu" required>
+                    
+                    {{!-- selects Major (FK) from a drop down menu --}}
+                    {{!-- Not required (can be NULL) --}}
+                    <label for="input-majorID">Major: </label>
+                    <select name="input-majorID" id="input-majorID">
+                        <option>Select a major</option>
+
+                        {{#each majors}}
+                        <option value="{{this.majorID}}">{{this.majorName}}</option>
+                        {{/each}}
+                    </select>
+                    <input type="submit" value ='Add Student'>
+                </form>
+
+                {{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+                <script src="./js/add_student.js"></script>
+            </article>
+{{!-- <div id = update>
+        <article>
+                <h2>Update Student</h2>
+                    <p>To update a specific Student select their studentID from the drop-down menu and modify all the below data</p>
+                    <form id="update-student-form-ajax"> --}}
+                        
+                        {{!-- selects Student (FK) from a drop down menu --}} 
+                        {{!-- <label for="input-studentID">StudentID</label>
+                        <select name="input-studentID" id="input-studentID-update">
+                            <option value="studentID">Select a StudentID</option>
+                            {{#each data}}
+                            <option value="{{this.studentID}}">{{this.studentID}}</option>
+                            {{/each}}
+                        </select>
+
+                        <label for="input-firstName">First Name:</label>
+                        <input type="text" name="input-firstName" id="input-firstName-update" placeholder="First Name">
+
+                        <label for="input-lastName">Last Name:</label>
+                        <input type="text" name="input-lastName" id="input-lastName-update" placeholder="Last Name">
+
+                        <label for="input-userName">Username: </label>
+                        <input type="text" name="input-userName" id="input-userName-update" placeholder="Username">
+
+                        <label for="input-email">Email: </label>
+                        <input type="text" name="input-email" id="input-email-update" placeholder="first.last@TOFU.edu"> --}}
+
+                        {{!-- selects Major (FK) from a drop down menu --}} 
+                        {{!-- <label for="input-majorID">Major: </label>
+                        <select name="input-majorID" id="input-majorID-update">
+                            <option>Select a major</option>
+                            {{#each majors}}
+                            <option value="{{this.majorID}}">{{this.majorName}}</option>
+                            {{/each}}
+                        </select>
+                        <input type="submit">
+                    </form>
+                    <script src="./js/update_student.js"></script>
+            </article> --}}
+</div>
+        
+    </section>
+</main>
+    

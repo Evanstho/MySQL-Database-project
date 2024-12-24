@@ -1,0 +1,83 @@
+{{!-- Citation for the following functions:--}}
+{{!--Date:5/24/2023 --}}
+{{!-- Adapted from: https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+{{!-- nodejs-starter-app/Step 7 - Dynamically Deleting Data/ --}}
+
+{{!-- Citation for the following functions: --}}
+{{!-- Date: 5/25/2023 --}}
+{{!-- Adapted from: https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%208%20-%20Dynamically%20Updating%20Data --}}
+{{!-- nodejs-starter-app/Step 8 - Dynamically Updating Data --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: OSUC-CS 340 ecampus node js starter app instructions: step 5 / adding new data--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: nodejs-starter-app Step 6: Dynamically FIlling Dropdowns and Adding a Search Bar--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data --}}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<main>
+    <section>
+        <h2>Enrollment Details</h2>
+        <article>
+            <table id= "enrollmentdetails-table">
+                <thead>
+                    <tr>
+                        {{#each data.[0]}}
+                        <th>
+                            {{@key}}
+                        </th>
+                        {{/each}}
+                        <th>Delete</th>
+                    </tr>                         
+                </thead>
+                <tbody>
+                    {{#each data}}
+                    <tr>
+                        <td>{{this.enrollmentID}}</td>
+                        {{!-- <td>{{this.EnrollmentDate}}</td> --}}
+                        <td>{{this.Student}}</td>
+                        <td>{{this.Class}}</td>
+                        <td><button onclick="deleteEnrollmentDetails({{this.enrollmentID}})">Delete Enrollment Details</button></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <script src="./js/delete_enrollmentdetails.js"></script>
+        </article>
+                    
+        <article>
+        {{!-- Form to add a record to the table  --}}
+            <h2>Add Enrollment Detail</h2>
+            <p>To add a new enrollment Detail, please enter their information below and click 'Submit'!</p>
+            <form id="add-enrollmentdetails-form-ajax">
+                {{!-- <label for="input-enrollmentDate">Enrollment Date: </label>
+                <input type="date" name="input-enrollmentdetailsDate" id="input-enrollmentdetailsDate" required> --}}
+                
+                {{!-- selects a Student from a drop down menu --}}
+                <label for="input-studentID">Student Name:</label>
+                <select name="input-studentName" id="input-studentName" required>
+                    <option value="studentName">Select a Student</option>
+                    {{#each students}}
+                    <option value="{{this.studentID}}">{{this.firstName}} {{this.lastName}}</option>
+                    {{/each}}
+                </select>
+
+                {{!-- selects a class from a drop down menu --}}
+                <label for="input-className">Full name: </label>
+                <select name="input-className" id="input-className" required>
+                    <option>Select a Class</option>
+                    {{#each classes}}
+                    <option value="{{this.classID}}">{{this.className}}</option>
+                    {{/each}}
+                </select>
+
+                <input type="submit" value='Add Enrollment Detail'>
+            </form>
+            <script src="./js/add_enrollmentdetails.js"></script>
+        </article>
+    </section>
+</main>

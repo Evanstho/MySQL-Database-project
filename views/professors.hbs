@@ -1,0 +1,83 @@
+{{!-- Citation for the following functions:--}}
+{{!--Date:6/1/2023 --}}
+{{!-- Adapted from: https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+{{!-- nodejs-starter-app/Step 7 - Dynamically Deleting Data/ --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: OSUC-CS 340 ecampus node js starter app instructions: step 5 / adding new data--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%205%20-%20Adding%20New%20Data --}}
+
+{{!-- Citation for the following function:--}}
+{{!-- Date: 6/1/2023 --}}
+{{!-- Adapted from: nodejs-starter-app Step 8: Dynamically Updating Data--}}
+{{!-- https://github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%204%20-%20Dynamically%20Displaying%20Data --}}
+
+<main>
+    <section>
+        <h2>Professors</h2>
+            <article>
+                <table id = "professors-table">
+                    <thead>
+                        <tr>
+                            {{#each data.[0]}}
+                            <th>
+                                {{@key}}
+                            </th>
+                            {{/each}}
+                            <th>Delete</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        {{#each data}}
+                        <tr>
+                            <td>{{this.professorID}}</td>
+                            <td>{{this.FirstName}}</td>
+                            <td>{{this.LastName}}</td>
+                            <td>{{this.Username}}</td>
+                            <td>{{this.Email}}</td>
+                            <td>{{this.Department}}</td>
+                            <td><button onclick="deleteProfessor({{this.professorID}})">Delete Professor</button></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                <script src="./js/delete_professor.js"></script>
+            </article>
+            <article>
+                                    {{!-- Form to add a record to the table  --}}
+                <h2>Add Professor</h2>
+                <p>To add a new Professor, please enter their information below and click 'Submit'!</p>
+                <form id="add-professor-form-ajax">
+                    <label for="input-firstName">First Name: </label>
+                    <input type="text" name="input-firstName" id="input-firstName" placeholder="First Name" required>
+                    
+                    <label for="input-lastName">Last Name: </label>
+                    <input type="text" name="input-lastName" id="input-lastName" placeholder="Last Name" required>
+
+                    <label for="input-userName">Username: </label>
+                    <input type="text" name="input-userName" id="input-userName" placeholder="Username" required>
+
+                    <label for="input-email">Email: </label>
+                    <input type="text" name="input-email" id="input-email" placeholder="first.last@TOFU.edu" required>
+
+                    {{!-- selects department (FK) from a drop down menu --}}
+                    <label for="input-deptID">Department: </label>
+                    <select name="input-deptID" id="input-deptID">
+                        <option>Select a department</option>
+                        {{#each departments}}
+                        <option value="{{this.deptID}}">{{this.deptName}}</option>
+                        {{/each}}
+                    </select>
+
+                    <input type="submit" value = 'Add Professor'>
+                </form>
+
+                {{!-- Embed our javascript to handle the DOM manipulation and AJAX request --}}
+                <script src="./js/add_professor.js"></script>
+            </article>
+    </section>
+</main>
+    
