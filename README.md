@@ -9,42 +9,42 @@ Thomas Evans And Vanessa Dowd
 Copyright © 2023. All rights reserved.
 
 ## Main Technologies
-JavaScript
-SQL
-Node.js
-Express
-Handlebars.js
-HTML5
-CSS
+- JavaScript
+- SQL
+- Node.js
+- Express
+- Handlebars.js
+- HTML5
+- CSS
 
 ## Sources
 Note: All code is based on the CS340 starter code, with the exception of: 
 
- -- Citation for the following boilerplate:-- 
- -- Date: 5/16/2023 -- 
- -- Adapated from: https:replit.com/@PamVanLonden/a-Global-Stylesheet 
+-- Citation for the following boilerplate:-- 
+-- Date: 5/16/2023 -- 
+-- Adapated from: https:replit.com/@PamVanLonden/a-Global-Stylesheet 
 
- -- Citation for the following document:-- 
- -- Date: 5/16/2023 -- 
- -- Adapated from: https:www.w3schools.com/w3css/default.asp 
+-- Citation for the following document:-- 
+-- Date: 5/16/2023 -- 
+-- Adapated from: https:www.w3schools.com/w3css/default.asp 
 
- -- Citation for the following function in update_class.js and add_class.js:--
- -- Date: 6/11/23 --
- -- StackOverflow: Javascript checking for null vs. undefined and difference between--
- -- Used this code to determine the best way to check is these two attributes were not entered. isNaN, === undefined, === null did not work.--
- -- https:stackoverflow.com/questions/5101948/javascript-checking-for-null-vs-undefined-and-difference-between-and --
+-- Citation for the following function in update_class.js and add_class.js:--
+-- Date: 6/11/23 --
+-- StackOverflow: Javascript checking for null vs. undefined and difference between--
+-- Used this code to determine the best way to check is these two attributes were not entered. isNaN, === undefined, === null did not work.--
+-- https:stackoverflow.com/questions/5101948/javascript-checking-for-null-vs-undefined-and-difference-between-and --
 
- -- Citation for the following function in update_class.js and add_class.js:--
- -- Date: 6/11/23 --
- -- free code camp: Falsy Values in JavaScript--
- -- Used this code to determine the best way to check is these two attributes were not entered. isNaN, === undefined, === null did not work.--
- -- https:www.freecodecamp.org/news/falsy-values-in-javascript/ --
+-- Citation for the following function in update_class.js and add_class.js:--
+-- Date: 6/11/23 --
+-- free code camp: Falsy Values in JavaScript--
+-- Used this code to determine the best way to check is these two attributes were not entered. isNaN, === undefined, === null did not work.--
+-- https:www.freecodecamp.org/news/falsy-values-in-javascript/ --
 
- -- Citation for the location.reload() function:--
- -- Date: 6/7/23 --
- -- Window location.reload()--
- -- Use this to reload a page after the information is entered (if it doesn't already automatically)
- -- https:www.w3schools.com/jsref/met_loc_reload.asp --
+-- Citation for the location.reload() function:--
+-- Date: 6/7/23 --
+-- Window location.reload()--
+-- Use this to reload a page after the information is entered (if it doesn't already automatically)
+-- https:www.w3schools.com/jsref/met_loc_reload.asp --
 
 -- Citation for the following function:--
 -- Date: 5/23/2023 --
