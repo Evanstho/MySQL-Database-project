@@ -6,7 +6,6 @@ Full stack web-based relational database app created for a fictional university 
 
 ## Created By: 
 Thomas Evans And Vanessa Dowd
-Copyright © 2023. All rights reserved.
 
 ## Main Technologies
 - JavaScript
@@ -130,4 +129,4 @@ Note: All code is based on the CS340 starter code, with the exception of:
 -- https:github.com/osu-cs340-ecampus/nodejs-starter-app/tree/main/Step%208%20-%20Dynamically%20Updating%20Data
 ```
  ## Copyright © 2023
- The Online Fake University(TOFU) Database project was developed by Thomas Evans and Vanessa Dowd in Spring 2023. All Rights Reserved.
+ The Online Fake University(TOFU) Database project was developed by Thomas Evans and Vanessa Dowd in Spring 2023. Copyright © 2023. All Rights Reserved.
